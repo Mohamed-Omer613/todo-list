@@ -1,0 +1,111 @@
+/* **********
+Imports
+********** */
+@font-face{
+    font-family: 'inter';
+    src: url(./Fonts/static/Inter-Regular.ttf);
+    font-weight: 400;
+}
+/* **********
+Reset
+********** */
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+/* **********
+Global
+********** */
+:root{
+--Dark-Blue: #0d0714;
+--Purple: #9e78cf;
+--White: #ffffff;
+--Purple2: #3e1671;
+--Blue: #15101c;
+--Border: #777777;
+--Green: #78cfb0;
+}
+body{
+    font-size: 10px;
+    font-family: inter;
+    color: var(--White);
+}
+/* **********
+Page Content
+********** */
+main {
+    display: flex;
+    background-color: var(--Dark-Blue);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 20%;
+    padding: 5px;
+}
+#msgValidate {
+    color: var(--Purple);
+    background-color: var(--Blue);
+    height: 3.8em;
+    padding-top: 1.1em;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    border-radius: 0.650em;
+}
+.hide {
+    display: none;
+}
+.new-task {
+    display: flex;
+    margin-bottom: 2.5em;
+}
+.new-task input {
+    color: var(--Border);
+    background-color: var(--Dark-Blue);
+    width: 16em;
+    height: 1.7em;
+    margin-right: 0.3em;
+    padding: 0.7em;
+    border: var(--Purple2) 0.00001em solid;
+    border-radius: 0.350em;
+}
+button {  
+    color: var(--White);
+    background-color: var(--Purple);
+    width: 1.7em;
+    height: 1.7em;
+    border: var(--Purple2) 0.1px solid;
+    border-radius: 0.400em;
+    cursor: pointer;
+}
+ul li{
+    color: var(--Purple);
+    background-color: var(--Blue);
+    height: 3.8em;
+    padding-top: 1.1em;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    border-radius: 0.650em;
+    display: flex;
+    justify-content: space-between;
+}
+ul li span.close {
+    display: inline-block;
+    margin-right: 1em;
+    cursor: pointer;
+}
+/* **********
+Media
+********** */
